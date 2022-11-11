@@ -14,3 +14,13 @@
   justify-content: center;
   height: 90vh;
 }
+
+/* transection page */
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+}
+/* transection page */
