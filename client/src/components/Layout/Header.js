@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { UserOutlined } from "@ant-design/icons";
 import { message } from "antd";
-
+import "../../styles/HeaderStyles.css";
 const Header = () => {
   const [loginUser, setLoginUser] = useState("");
   const navigate = useNavigate();
@@ -34,15 +35,17 @@ const Header = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <Link className="navbar-brand" to="/">
-              Expense Management
+              Expense Management App
             </Link>
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 {" "}
-                <p className="nav-link">{loginUser && loginUser.name}</p>{" "}
+                <h6 className="nav-link ">
+                  <UserOutlined /> {loginUser && loginUser.name}
+                </h6>{" "}
               </li>
               <li className="nav-item">
-                <button className="btn btn-primary" onClick={logoutHandler}>
+                <button className="btn btn-danger" onClick={logoutHandler}>
                   Logout
                 </button>
               </li>

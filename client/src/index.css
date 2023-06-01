@@ -5,12 +5,40 @@
 }
 
 .content {
-  height: 80vh;
+  height: 100%;
 }
 
-.resgister-page {
+/* transection page */
+.filters {
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 90vh;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px gray;
+  margin-bottom: 10px;
+}
+/* transection page */
+
+/* antd icons */
+
+.switch-icons {
+  border: 1px solid rgba(0, 0, 0, 0.677);
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.active-icon {
+  color: black;
+}
+.inactive-icon {
+  color: gray;
+}
+
+.filter-tab .ant-select-selector {
+  width: 150px !important;
 }
